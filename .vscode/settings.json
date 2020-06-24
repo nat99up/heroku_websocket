@@ -1,0 +1,6 @@
+{
+    "terminal.integrated.env.osx": {
+        "PATH": ""
+    },
+    "python.pythonPath": "/Users/xiaohaoren/anaconda3/envs/django_heroku/bin/python"
+}
