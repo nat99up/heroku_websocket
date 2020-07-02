@@ -1,1 +1,1 @@
-web: daphne -b 0.0.0.0 -p 8001 heroku_websocket.asgi:application
+web: daphne heroku_websocket.asgi:application --port $PORT --bind 0.0.0.0
