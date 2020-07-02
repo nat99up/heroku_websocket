@@ -1,0 +1,1 @@
+web: gunicorn --pythonpath heroku_websocket heroku_websocket.wsgi

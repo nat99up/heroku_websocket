@@ -7,6 +7,6 @@ def index(request,name='Guest'):
 
     last_guest = cache.get('last_guest')
 
-    cache.set('last_guest',name)
+    cache.set('last_guest',name,timeout= 600)
 
     return HttpResponse('Hi {}! I am bot. \n Last guest is {}.'.format(name,last_guest))

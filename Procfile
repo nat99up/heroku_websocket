@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath heroku_websocket heroku_websocket.wsgi
+web: daphne -b 0.0.0.0 -p 8001 heroku_websocket.asgi:application

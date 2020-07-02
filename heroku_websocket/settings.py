@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'bot'
+    'channels',
+    'bot',
 ]
 
 MIDDLEWARE = [
@@ -83,7 +84,6 @@ DATABASES = {
 }
 
 # Redis
-
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
@@ -93,6 +93,10 @@ CACHES = {
         }
     }
 }
+
+
+# ASGI
+ASGI_APPLICATION = 'heroku_websocket.routing.application'
 
 
 # Password validation
